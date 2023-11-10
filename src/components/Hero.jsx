@@ -5,8 +5,8 @@ const Hero = () => {
   return (
     <section className="hero align-body flex  ">
       <div className=" grid max-sm:place-items-center m">
-        <h1 className="hero-text dark:text-dark-text">
-          A Simple Bookmark <br /> Manager
+        <h1 data-testid = 'heading' className="hero-text dark:text-dark-text">
+          A  Bookmark <br /> Manager
         </h1>
         <p className="text-sm lg:text-lg p-2 ">
           A clean and simple interface to organize your favourite websites. Open

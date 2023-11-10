@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders page unchanged 1`] = `
+<div>
+  <section
+    class="w-full "
+  >
+    <div
+      class=" mt-10 flex flex-col gap-5 place-items-center align-body"
+    >
+      <h1
+        data-testid="count"
+      >
+        Counter: 
+        0
+      </h1>
+      <button
+        class="border bg-soft-blue p-2 rounded hover:bg-soft-blue/50"
+        data-testid="incrementbtn"
+      >
+        Increment
+      </button>
+      <button
+        class="border bg-soft-red p-2 rounded hover:bg-soft-red/50"
+        data-testid="decrementbtn"
+      >
+        Increment
+      </button>
+    </div>
+  </section>
+</div>
+`;
