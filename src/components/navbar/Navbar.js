@@ -19,7 +19,7 @@ const Navbar = () => {
         {Navlinks.map((item, index) => (
           // const listItems = <li>{item.text}</li>
           <div key={index} className="flex gap-5 px-4">
-            <Link href={item.link} className={`link ${pathname===item.link? 'border-b border-b-soft-red no-underline text-md text-dark-text transition-all duration-500 ease-in-out': 'text-md no-underline' }  `}>
+            <Link href={item.link} className={`link ${pathname===item.link? 'border-b border-b-soft-red no-underline text-md text-dark-text transition-transform  duration-500 ease-in-out': 'text-md no-underline' }  `}>
               {item.text}
             </Link>
           </div>

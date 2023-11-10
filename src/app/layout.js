@@ -2,6 +2,7 @@ import { Rubik } from "next/font/google";
 import "./globals.css";
 import { Suspense } from "react";
 import Navbar from "@/components/navbar/Navbar";
+import AuthProvider from "@/context/AuthProvider";
 const rubik = Rubik({ subsets: ["latin"] });
 
 export const metadata = {
@@ -12,13 +13,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Suspense>
-        <body className={rubik.className}>
-          <Navbar />
-          {children}
-          {/* <div>FOOTER</div> */}
-        </body>
-      </Suspense>
-    </html>
+        <Suspense>
+          <body className={rubik.className}>
+        <AuthProvider>
+            <Navbar />
+            {children}
+            {/* <div>FOOTER</div> */}
+    </AuthProvider>
+          </body>
+        </Suspense>
+      </html>
   );
 }
