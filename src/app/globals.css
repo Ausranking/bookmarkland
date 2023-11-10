@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+@layer base {
+  
+  a {
+    @apply uppercase inline-block
+  }
+}
+
+@layer components {
+  li {
+    @apply list-none
+  }
+  Link {
+    @apply no-underline
+  }
+}
+
+@layer utilities {
+  .align-body {
+    @apply w-[85vw] m-auto
+  }
+  .btn {
+    @apply p-2 rounded text-dark-text
+  }
+  .hero {
+    @apply max-sm:flex-col-reverse mt-10 items-stretch [&>*]:self-center max-sm:text-center [&>*]:flex-1
+  }
+  .hero-text {
+    @apply text-very-dark-blue text-2xl font-bold p-2 lg:text-3xl tracking-wider
+  }
+}
